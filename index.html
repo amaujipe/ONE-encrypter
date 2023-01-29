@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Encrypter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aside.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/modules.css">
+</head>
+<body>
+    
+    <header class="header">
+        <section class="container">
+            <img src="assets/images/logo.svg" alt="Logo de ancrypter" class="header__image">
+        </section>
+    </header>
+
+    <main class="main container">
+        <form class="form">
+            <textarea id="textToEncrypt" class="form__textToEncrypt" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="form__actions">
+                <span class="form__warning">Solo letras minusculas y sin acentos</span>
+                <button id="encryptButton" class="button button--primary">Encriptar</button>
+                <button id="decryptButton" class="button button--secondary">Desencriptar</button>
+            </div>
+        </form>
+    </main>
+
+    <aside class="aside container">
+        <div id="asideMessage" class="aside__encrypted invisible">
+            <section id="encryptedText" class="encryptetText"></section>
+            <button id="copyButton" class="button button--secondary">Copiar</button>
+        </div>
+        <div id="asideNoMessage" class="aside__noMessage">
+            <img src="assets/images/guy-looking.png" alt="Sujeto buscando con una lupa" class="aside__image" />
+            <h2 class="aside__title">Ningún mensaje fue encontrado</h2>
+            <p class="aside__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <section class="container">
+            <h2 class="footer__title">Desarrollado por <a href="https://www.linkedin.com/in/amaujipe/" target="_blank">Andres Jimenez</a></h2>
+            <p class="footer__paragraph">Oracle ONE - Allura Challenges</p>
+        </section>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/transformText.js"></script>
+
+</body>
+</html>

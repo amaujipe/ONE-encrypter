@@ -1,0 +1,33 @@
+:root {
+
+    /*----- COLORS -----*/
+    --background-color  : #F3F5FC;
+    --primary-color     : #0A3871;
+    --text-color        : #495057;
+    --text-color-bold   : #343A40;
+    --white-color       : #FFFFFF;
+
+    /*----- FONTS -----*/
+    --main-font: 'Inter', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color:var(--text-color);
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}

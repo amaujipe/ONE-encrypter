@@ -1,0 +1,25 @@
+.container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.invisible {
+    display: none;
+}
+
+.button {
+    border: 1px solid #000;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    width: 48.5%;
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.button--secondary {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}

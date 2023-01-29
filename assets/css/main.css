@@ -1,0 +1,86 @@
+.main {
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    width: 60%;
+}
+
+.form {
+    height: calc(100vh - 8em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form__textToEncrypt {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--primary-color);
+    display: block;
+    font-size: 2rem;
+    max-width: 100%;
+    resize: none;
+}
+
+.form__textToEncrypt:focus {
+    outline: none;
+}
+
+.form__textToEncrypt::placeholder {
+    color: var(--primary-color);
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.form__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__warning {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form__warning::before {
+    content: url(../images/warning.svg);
+    margin-right: 0.25rem;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1023px) {
+    
+    .main {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-right: 10rem;
+        max-width: calc(100vw - 2em);
+        width: 100%;
+    }
+    
+    .form {
+        height: 65vh;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    .form {
+        height: 55vh;
+    }
+
+    .form__actions .button {
+        width: 100%;
+    }
+
+    .form__actions .button:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+
+}
